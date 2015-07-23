@@ -6,5 +6,6 @@ urlpatterns = [
     # url(r'^$', 'TBF.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
 
+    url(r'^book/', include('book.urls', namespace='book')),
     url(r'^admin/', include(admin.site.urls)),
 ]

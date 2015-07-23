@@ -1,0 +1,10 @@
+INDEX
+{% if articles %}
+  <ul>
+    {% for article in articles %}
+      <li><a href="{% url 'book:article' article.id %}">{{ article.title }}</a></li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>No articles available.</p>
+{% endif %}

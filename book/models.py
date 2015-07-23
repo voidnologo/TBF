@@ -26,7 +26,7 @@ class Article(models.Model):
     sub_title = models.CharField(max_length=200)
     author = models.ForeignKey(Author)
     source = models.ForeignKey(Source)
-    file_path = models.URLField()
+    file_path = models.CharField(max_length=200)
 
     def __str__(self):
         return '{}'.format(self.title)
