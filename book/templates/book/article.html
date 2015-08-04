@@ -1,3 +1,6 @@
+{% extends "book/base.html" %}
+{% block content %}
+
 <p>{{ article.title }}</p>
 <p>{{ article.author }}</p>
 <p>{{ article.source }}</p>
@@ -5,3 +8,5 @@
 {% with 'articles/'|add:article.file_path as template %}
   {% include template %}
 {% endwith %}
+
+{% endblock %}

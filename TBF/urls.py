@@ -8,4 +8,5 @@ urlpatterns = [
 
     url(r'^book/', include('book.urls', namespace='book')),
     url(r'^admin/', include(admin.site.urls)),
+    # url(r'^$', 'book:index', name='home'),
 ]
