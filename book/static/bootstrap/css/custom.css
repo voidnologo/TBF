@@ -19,3 +19,6 @@ a[rel="footnote"]:after {
 a[rev="footnote"] {
     border-bottom: none;
 }
+
+.article-body {
+}
