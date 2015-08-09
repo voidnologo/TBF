@@ -10,45 +10,45 @@
     <link rel="stylesheet" type="text/css" href="{% static 'bootstrap/css/custom.css' %}">
   </head>
 
-<body>
-    <nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Void No Logo</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="nav navbar-nav">
-                  <li class="active"><a href="{% url 'book:index' %}" target="_blank">Home</a></li>
-                    <li><a href="" target="_blank">About</a></li>
-                    <li><a href="" target="_blank">Contact</a></li>
-                </ul>
-            </div>
+  <nav id="myNavbar" class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+      <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <span class="navbar-brand" href="#">Void No Logo</a>
         </div>
-    </nav>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="{% url 'book:index' %}" target="_blank">Home</a></li>
+              <li><a href="" target="_blank">About</a></li>
+              <li><a href="" target="_blank">Contact</a></li>
+            </ul>
+        </div>
+  </nav>
 
-    <div class="container page-content">
-      {% block content %}
-      {% endblock %}
-    </div>
-
+  <body>
     <div class="container">
-        <hr>
-        <div class="row">
-            <div class="col-xs-12">
-                <footer>
-                    <p>&copy; Copyright 2015 Void No Logo</p>
-                </footer>
-            </div>
-        </div>
-    </div>
+
+      <div class="row page-content">
+        {% block content %}
+        {% endblock %}
+      </div>
+
+      <div class="row">
+          <div class="col-xs-12">
+            <hr>
+              <footer>
+                  <p>&copy; Copyright 2015 Void No Logo</p>
+              </footer>
+          </div>
+      </div>
+
+    </div>  <!-- end container --!>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
 </body>

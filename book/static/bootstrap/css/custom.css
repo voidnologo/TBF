@@ -1,4 +1,4 @@
-.page-content {
+body {
   padding-top: 100px;
 }
 
@@ -18,7 +18,4 @@ a[rel="footnote"]:after {
 
 a[rev="footnote"] {
     border-bottom: none;
-}
-
-.article-body {
 }
