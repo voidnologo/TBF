@@ -1,13 +1,12 @@
 {% extends "book/base.html" %}
 {% block content %}
 
-  <div class="jumbotron">
+  <div class="row jumbotron">
     <h1>{{ article.title }}</h1>
     <p>{{ article.author }}</p>
     <p>{{ article.source }}</p>
   </div>
   <div class="row">
-    <div class"col-md-2"></div>
     <div class="col-md-8">
       <div class="text-justify">
         {% with 'articles/'|add:article.file_path as template %}
@@ -15,7 +14,6 @@
         {% endwith %}
       </div>
     </div>
-    <div class"col-md-2"></div>
   </div>
 
 {% endblock %}
