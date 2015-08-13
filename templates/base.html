@@ -1,0 +1,36 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>To Be Free</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/custom.css' %}">
+  </head>
+
+  {% include "./nav/nav.html" %}
+
+  <body>
+    <div class="container">
+
+      <div class="row">
+        {% block content %}
+        {% endblock %}
+      </div>
+
+      <div class="row">
+          <div class="col-xs-12">
+            <hr>
+              <footer>
+                  <p>&copy; Copyright 2015 Void No Logo</p>
+              </footer>
+          </div>
+      </div>
+
+    </div>  <!-- end container --!>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>
