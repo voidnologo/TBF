@@ -1,5 +1,6 @@
 body {
   padding-top: 100px;
+  font-size: 18px;
 }
 
 a[rel="footnote"] {
@@ -24,4 +25,31 @@ a[rev="footnote"] {
 .footnote {
     color: #989898;
     font-size: 80%;
+}
+
+.scripture-reference:before {
+    content: "(";
+}
+
+.scripture-reference:after {
+    content: ")";
+}
+
+.scripture-reference {
+    font-size: 80%;
+    color: #989898;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+quote:before {
+    content: "\"";
+}
+
+quote:after {
+    content: "\"";
+}
+
+quote {
+    font-style: italic;
 }
