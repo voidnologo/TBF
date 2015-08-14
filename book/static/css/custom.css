@@ -2,20 +2,26 @@ body {
   padding-top: 100px;
 }
 
-/* a[rel="footnote"] { */
-/*     border-bottom: none; */
-/*     background-color: #fff9c7; */
-/*     line-height: 0; */
-/* } */
+a[rel="footnote"] {
+    border-bottom: none;
+    color: #008b8b;
+    line-height: 0;
+    font-size: 75%;
+}
 
-/* a[rel="footnote"]:before { */
-/*     content: "{"; */
-/* } */
+a[rel="footnote"]:before {
+    content: "(";
+}
 
-/* a[rel="footnote"]:after { */
-/*     content: "}"; */
-/* } */
+a[rel="footnote"]:after {
+    content: ")";
+}
 
-/* a[rev="footnote"] { */
-/*     border-bottom: none; */
-/* } */
+a[rev="footnote"] {
+    border-bottom: none;
+}
+
+.footnote {
+    color: #989898;
+    font-size: 80%;
+}
